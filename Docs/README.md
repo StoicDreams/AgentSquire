@@ -1,6 +1,6 @@
 # Agent Squire
 
-[WebUI Version: 0.8.8](https://github.com/StoicDreams/RustWebUI)
+[WebUI Version: 0.8.11](https://github.com/StoicDreams/RustWebUI)
 
 Demo website to showecase a scripting engine for call center agents.
 
