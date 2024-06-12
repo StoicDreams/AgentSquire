@@ -3,9 +3,9 @@ use crate::prelude::*;
 pub fn nav_content(contexts: &Contexts) -> Html {
     html! {
         <>
-            <section class="d-flex justify-center" slot="header">
+            <webui-flex justify="center" slot="header">
                 <webui-stoic-dreams-logo title="Agent Squire Logo" text="AS"></webui-stoic-dreams-logo>
-            </section>
+            </webui-flex>
             <NavDisplay routes={get_nav_routing(contexts)} class="d-flex flex-column pa-1" />
         </>
     }
