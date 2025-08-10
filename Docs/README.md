@@ -2,7 +2,7 @@
 
 [Version: 0.1.4](https://github.com/StoicDreams/AgentSquire)
 
-[WebUI Version: 0.11.2](https://github.com/StoicDreams/WebUI)
+[WebUI Version: 0.11.3](https://github.com/StoicDreams/WebUI)
 
 Demo website to showecase a scripting engine for call center agents.
 
