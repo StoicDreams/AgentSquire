@@ -39,7 +39,7 @@ stages:
         inputs:
           targetType: 'inline'
           script: |
-            cargo install trunk
+            cargo install trunk --locked
       - task: PowerShell@2
         displayName: 'Install Post Build'
         inputs:
