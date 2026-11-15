@@ -29,11 +29,15 @@ I'm here to help you choose the right assistant, set it up, and put it to work, 
     </webui-card>
 </webui-cards>
 
-## Free tools, on their way
+## Free tools
 
 <webui-page-segment elevation="10">
 
-I'm also building small tools to make the guides easier to use: an instructions builder that writes custom instructions for your assistant, fill-in-the-blank prompt cards, and a short quiz to find the assistant that fits you. They'll run in your browser, so what you type stays with you.
+I'm also building small tools to make the guides easier to use. They run in your browser, so what you type stays with you.
+
+The first one is ready: the [Instructions Builder](/instructions-builder) asks a few questions and writes custom instructions for your assistant, so it knows how you like your answers in every chat.
+
+Fill-in-the-blank prompt cards and a short quiz to find the assistant that fits you are on their way.
 
 </webui-page-segment>
 
@@ -41,6 +45,6 @@ I'm also building small tools to make the guides easier to use: an instructions 
 
 <webui-page-segment elevation="10">
 
-My first guides and tools are being written now. Is there something you'd like me to cover first? Tell me with the feedback button at the top of the page.
+My first guides are being written now, and more tools are on the way. Is there something you'd like me to cover first? Tell me with the feedback button at the top of the page.
 
 </webui-page-segment>

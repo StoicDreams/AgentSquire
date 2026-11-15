@@ -12,6 +12,32 @@
                 "name": "Instructions Builder",
                 "icon": "note_pen",
                 "url": "/instructions-builder"
+            },
+            {
+                "name": "Prompt Cards",
+                "icon": "cards",
+                "url": "/prompt-cards"
+            }
+        ]
+    },
+    {
+        "name": "Recipes",
+        "icon": "circle_list|theme:tertiary|backing|inverted",
+        "children": [
+            {
+                "name": "Reply to an Email",
+                "icon": "envelope",
+                "url": "/recipes/reply-to-an-email"
+            },
+            {
+                "name": "Summarize Meeting Notes",
+                "icon": "note-sticky",
+                "url": "/recipes/summarize-meeting-notes"
+            },
+            {
+                "name": "Plan a Trip",
+                "icon": "plane",
+                "url": "/recipes/plan-a-trip"
             }
         ]
     }
