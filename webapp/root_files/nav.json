@@ -3,5 +3,16 @@
         "name": "Home",
         "icon": "circle_home|theme:title|backing|inverted",
         "url": "/"
+    },
+    {
+        "name": "Tools",
+        "icon": "circle_wand|theme:primary|backing|inverted",
+        "children": [
+            {
+                "name": "Instructions Builder",
+                "icon": "note_pen",
+                "url": "/instructions-builder"
+            }
+        ]
     }
 ]
