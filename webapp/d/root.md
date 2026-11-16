@@ -35,9 +35,11 @@ I'm here to help you choose the right assistant, set it up, and put it to work, 
 
 I'm also building small tools to make the guides easier to use. They run in your browser, so what you type stays with you.
 
-The first one is ready: the [Instructions Builder](/instructions-builder) asks a few questions and writes custom instructions for your assistant, so it knows how you like your answers in every chat.
+The [Instructions Builder](/instructions-builder) asks a few questions and writes custom instructions for your assistant, so it knows how you like your answers in every chat.
 
-Fill-in-the-blank prompt cards and a short quiz to find the assistant that fits you are on their way.
+[Prompt Cards](/prompt-cards) give you fill-in-the-blank prompts for everyday tasks, like replying to an email, summarizing a meeting, or planning a trip.
+
+A short quiz to find the assistant that fits you is on its way.
 
 </webui-page-segment>
 
