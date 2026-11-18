@@ -26,6 +26,27 @@
         ]
     },
     {
+        "name": "Setting Up",
+        "icon": "circle_sliders|theme:info|backing|inverted",
+        "children": [
+            {
+                "name": "Memory and Projects",
+                "icon": "folder-open",
+                "url": "/setting-up/memory-and-projects"
+            },
+            {
+                "name": "Connecting Your Apps",
+                "icon": "plug",
+                "url": "/setting-up/connecting-your-apps"
+            },
+            {
+                "name": "Privacy Settings",
+                "icon": "lock",
+                "url": "/setting-up/privacy-settings"
+            }
+        ]
+    },
+    {
         "name": "Tools",
         "icon": "circle_wand|theme:primary|backing|inverted",
         "children": [
@@ -79,6 +100,32 @@
                 "name": "Plan a Trip",
                 "icon": "plane",
                 "url": "/recipes/plan-a-trip"
+            }
+        ]
+    },
+    {
+        "name": "Staying Safe",
+        "icon": "circle_shield|theme:success|backing|inverted",
+        "children": [
+            {
+                "name": "The Risks of Using AI",
+                "icon": "triangle",
+                "url": "/ai-risks"
+            },
+            {
+                "name": "What Not to Share",
+                "icon": "key",
+                "url": "/staying-safe/what-not-to-share"
+            },
+            {
+                "name": "Checking AI Answers",
+                "icon": "clipboard-check",
+                "url": "/staying-safe/checking-ai-answers"
+            },
+            {
+                "name": "Spotting AI Scams",
+                "icon": "phone-handset",
+                "url": "/staying-safe/spotting-ai-scams"
             }
         ]
     }

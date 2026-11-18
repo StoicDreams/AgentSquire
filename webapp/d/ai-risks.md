@@ -250,6 +250,6 @@ Before you rely on an AI answer or let it act for you, ask yourself:
 
 This page is general information to help you use AI more safely. It isn't legal, medical, financial, or security advice, and it can't cover every risk. AI changes quickly, so this page was last reviewed in November 2026. Is there a risk I've missed? Tell me with the feedback button at the top of the page.
 
-For ways to use AI well, start with the [Instructions Builder](/instructions-builder) and the [Prompt Cards](/prompt-cards).
+For practical next steps, read [What not to share](/staying-safe/what-not-to-share), [Checking AI answers](/staying-safe/checking-ai-answers), [Spotting AI scams](/staying-safe/spotting-ai-scams), and [Privacy settings](/setting-up/privacy-settings). For ways to use AI well, start with the [Instructions Builder](/instructions-builder) and the [Prompt Cards](/prompt-cards).
 
 </webui-page-segment>
