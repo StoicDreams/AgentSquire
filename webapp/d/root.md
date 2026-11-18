@@ -33,7 +33,7 @@ I'm here to help you choose the right assistant, set it up, and put it to work, 
 
 <webui-page-segment elevation="10">
 
-I'm also building small tools to make the guides easier to use. They run in your browser, so what you type stays with you.
+I've also built small tools to make the guides easier to use. They run in your browser, so what you type stays with you.
 
 The [Instructions Builder](/instructions-builder) asks a few questions and writes custom instructions for your assistant, so it knows how you like your answers in every chat.
 
@@ -41,12 +41,14 @@ The [Instructions Builder](/instructions-builder) asks a few questions and write
 
 Not sure which assistant to use? [Which Assistant Fits Me?](/which-assistant) asks three quick questions and suggests one to try first, with the reasons.
 
+Thinking about paying? The [AI Plan Cost Calculator](/cost-calculator) shows what each assistant would cost you, by the month and by the year.
+
 </webui-page-segment>
 
 ## Where things stand
 
 <webui-page-segment elevation="10">
 
-My first guides are being written now, and more tools are on the way. Is there something you'd like me to cover first? Tell me with the feedback button at the top of the page.
+My first guides are being written now. Is there something you'd like me to cover first? Tell me with the feedback button at the top of the page.
 
 </webui-page-segment>

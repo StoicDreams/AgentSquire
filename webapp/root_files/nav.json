@@ -22,6 +22,11 @@
                 "name": "Which Assistant Fits Me?",
                 "icon": "messages-question",
                 "url": "/which-assistant"
+            },
+            {
+                "name": "AI Plan Cost Calculator",
+                "icon": "calculator",
+                "url": "/cost-calculator"
             }
         ]
     },
