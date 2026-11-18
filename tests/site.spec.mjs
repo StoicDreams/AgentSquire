@@ -111,8 +111,9 @@ test.describe('prerendered pages', () => {
         // Search results and link previews show it. Without one, the build cuts the page's first paragraph short.
         const problems = [];
         for (const { file } of prerenderedPages()) {
-            const tag = readText(file).match(/<webui-data\b[^>]*>/i)?.[0] || '';
-            const description = tag.match(/\bdata-page-description="([^"]*)"/i)?.[1]?.trim();
+            // The app and the build read every webui-data tag on the page, and a later value wins.
+            const description = [...readText(file).matchAll(/<webui-data\b[^>]*>/gi)]
+                .map(tag => tag[0].match(/\bdata-page-description="([^"]*)"/i)?.[1]).filter(v => v !== undefined).at(-1)?.trim();
             if (!description) problems.push(`${relativeToSite(file)}: no data-page-description`);
             else if (description.length < DESCRIPTION_LENGTH.min || description.length > DESCRIPTION_LENGTH.max) {
                 problems.push(`${relativeToSite(file)}: ${description.length} characters`);
