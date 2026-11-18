@@ -1,6 +1,6 @@
 # Agent Squire
 
-[Version: 0.1.31](https://github.com/StoicDreams/AgentSquire)
+[Version: 0.1.32](https://github.com/StoicDreams/AgentSquire)
 
 [WebUI](https://github.com/StoicDreams/WebUI)
 
