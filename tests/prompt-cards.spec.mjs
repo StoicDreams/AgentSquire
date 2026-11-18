@@ -55,7 +55,7 @@ test.describe('on the Prompt Cards page', () => {
         await typeText(page, 'What you want to say', '<img src=x onerror="window.__attacked=1">');
         await expect.poll(() => outputText(page)).toContain('What I want to say: ');
         await expect(tool(page).locator('img')).toHaveCount(0);
-        expect(await page.evaluate(() => window.__attacked)).toBeUndefined();
+        await expect.poll(() => page.evaluate(() => window.__attacked)).toBeUndefined();
     });
 });
 

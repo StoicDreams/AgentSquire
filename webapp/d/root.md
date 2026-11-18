@@ -39,7 +39,7 @@ The [Instructions Builder](/instructions-builder) asks a few questions and write
 
 [Prompt Cards](/prompt-cards) give you fill-in-the-blank prompts for everyday tasks, like replying to an email, summarizing a meeting, or planning a trip.
 
-A short quiz to find the assistant that fits you is on its way.
+Not sure which assistant to use? [Which Assistant Fits Me?](/which-assistant) asks three quick questions and suggests one to try first, with the reasons.
 
 </webui-page-segment>
 

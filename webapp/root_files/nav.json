@@ -17,6 +17,11 @@
                 "name": "Prompt Cards",
                 "icon": "cards",
                 "url": "/prompt-cards"
+            },
+            {
+                "name": "Which Assistant Fits Me?",
+                "icon": "messages-question",
+                "url": "/which-assistant"
             }
         ]
     },

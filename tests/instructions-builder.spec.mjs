@@ -64,5 +64,5 @@ test('shows typed HTML as text', async ({ page }) => {
     await expect.poll(() => outputText(page)).toContain('I work as');
     await expect(output(page).locator('img')).toHaveCount(0);
     await expect(tool(page).locator('img')).toHaveCount(0);
-    expect(await page.evaluate(() => window.__attacked)).toBeUndefined();
+    await expect.poll(() => page.evaluate(() => window.__attacked)).toBeUndefined();
 });
