@@ -1,4 +1,4 @@
-<webui-data data-page-title="What Not to Share" data-page-subtitle="Keep private details out of your AI chats"></webui-data>
+<webui-data data-page-title="What Not to Share" data-page-subtitle="Keep private details out of your AI chats" data-page-description="What to keep out of your AI chats, from passwords to health details, and how to still get help with sensitive things safely."></webui-data>
 
 <webui-quote theme="title">
 Talking to an AI assistant feels private, like thinking out loud. It isn't. What you type goes to the company that runs it, where it may be stored, read, or used for training. Here's what to keep out, and how to still get help with sensitive things.

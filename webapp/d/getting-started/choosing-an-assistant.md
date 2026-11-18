@@ -1,4 +1,4 @@
-<webui-data data-page-title="Choosing an Assistant" data-page-subtitle="ChatGPT, Claude, Gemini, and Copilot side by side"></webui-data>
+<webui-data data-page-title="Choosing an Assistant" data-page-subtitle="ChatGPT, Claude, Gemini, and Copilot side by side" data-page-description="ChatGPT, Claude, Gemini, and Copilot side by side, and how to pick the one that fits where you work, the apps you use, and how you like to talk."></webui-data>
 
 <webui-quote theme="title">
 The big four assistants are more alike than their makers would like you to think. Any of them can help you write, plan, and learn. The best one for you usually comes down to where you work, which apps you use, and which one you enjoy talking to.

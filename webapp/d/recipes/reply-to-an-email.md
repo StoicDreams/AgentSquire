@@ -1,4 +1,4 @@
-<webui-data data-page-title="Reply to an Email" data-page-subtitle="A recipe for clear, quick replies"></webui-data>
+<webui-data data-page-title="Reply to an Email" data-page-subtitle="A recipe for clear, quick replies" data-page-description="A step-by-step recipe, with a prompt to copy, for having your AI assistant draft a clear email reply in the tone you want."></webui-data>
 
 <webui-quote theme="title">
 Some emails take two minutes to answer and twenty minutes to word. Tell your assistant what you want to say and how it should sound, and it will draft the reply for you to check and send.

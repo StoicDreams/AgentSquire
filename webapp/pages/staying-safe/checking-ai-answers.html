@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZHF4JJT65"></script>
+	<script>
+		if (location.hostname !== 'localhost') {
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+			gtag('config', 'G-8ZHF4JJT65');
+		}
+	</script>
+	<title>Checking AI Answers: How to tell when to trust what your assistant says</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index, follow">
+	<base href="/" />
+	<script type="text/javascript">
+		navigator.serviceWorker.register('service-worker.min.js');
+	</script>
+
+	<link rel="dns-prefetch" href="https://cdn.myfi.ws" />
+	<link rel="dns-prefetch" href="https://api.myfi.ws" />
+	<link rel="preconnect" href="https://cdn.myfi.ws">
+	<link rel="preconnect" href="https://api.myfi.ws">
+
+	<link href="Logo.svg?v=53846f7665" rel="icon" type="image/svg+xml" sizes="any" />
+	<link rel="manifest" href="app.webmanifest?v=8a559d27a9">
+
+	<script>
+		// Web UI loads from the local MyFiCDN server (MyFiCDN/PowerShell/RunLocal.ps1) when the site runs on localhost,
+		// so framework changes show before they are published, and from cdn.myfi.ws everywhere else.
+		window.webuiCdn = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname) ? 'http://localhost:3180/' : 'https://cdn.myfi.ws/';
+		document.write('<link href="' + webuiCdn + 'css/webui.min.css" rel="stylesheet" />');
+	</script>
+	<link href="css/app.min.css?v=9bb04149c5" rel="stylesheet" />
+	<script>document.write('<script src="' + webuiCdn + 'webui/loader.min.js"></' + 'script>');</script>
+
+	<!-- Prerendered pages from webapp_post_build prerender. Release builds copy them to the site root. -->
+
+	<!--Web Worker-->
+	<script type="module" src="main.js?v=cea15cbf4f"></script>
+	<!--End Web Worker-->
+
+	<meta name="theme-color" content="#1f4fbf" />
+
+	<meta name="author" content="Erik Gassler">
+	<meta name="description" content="How much checking an AI answer needs based on what's at stake, and quick ways to tell when to trust what your assistant says.">
+
+	<meta property="og:image" content="https://www.agentsquire.com/img/agent-squire-share.png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Agent Squire: your guide to AI agents">
+	<meta property="og:title" content="Checking AI Answers: How to tell when to trust what your assistant says">
+	<meta property="og:url" content="https://www.agentsquire.com/staying-safe/checking-ai-answers">
+	<meta property="og:description" content="How much checking an AI answer needs based on what's at stake, and quick ways to tell when to trust what your assistant says.">
+
+	<meta name="twitter:title" content="Checking AI Answers: How to tell when to trust what your assistant says">
+	<meta name="twitter:url" content="https://www.agentsquire.com/staying-safe/checking-ai-answers">
+	<meta name="twitter:site" content="@stoicdreamsllc">
+	<meta name="twitter:description" content="How much checking an AI answer needs based on what's at stake, and quick ways to tell when to trust what your assistant says.">
+	<meta name="twitter:image" content="https://www.agentsquire.com/img/agent-squire-share.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="canonical" href="https://www.agentsquire.com/staying-safe/checking-ai-answers" />
+	<link rel="modulepreload" href="https://cdn.myfi.ws/js/mdparse.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="/wc/ai-disclaimer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/alerts.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/app.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/app-config.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/data.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/drawer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/feedback.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/flex.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/icon.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/link.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/myfi-info.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/nav.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/next-page.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/page-footer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/page-segment.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/quote.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-dreams-logo.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-social-links.min.js" crossorigin="anonymous" />
+	<meta name="webui-prerender" content="a25245af25">
+</head>
+
+<body>
+	<webui-app-config src="appConfig.json"></webui-app-config>
+	<webui-app data-removeclass=".nav|open;.shared|open">
+		<div data-prerendered>
+<p>AI assistants are right a lot of the time, which makes it easy to stop checking. But they can be wrong while sounding completely sure. Here's how much checking each kind of answer needs, and quick ways to do it.</p>
+
+<h2>How much checking does it need?</h2>
+
+<p>Match the checking to what's at stake.</p>
+<table><thead><tr><th style="text-align: left">If the answer is...</th><th style="text-align: left">Check it...</th><th style="text-align: left">For example</th></tr></thead><tbody>
+<tr><td style="text-align: left">Easy to judge yourself</td><td style="text-align: left">By reading it</td><td style="text-align: left">An email draft, a list of gift ideas, a summary of your own notes</td></tr>
+<tr><td style="text-align: left">A fact you'll pass on</td><td style="text-align: left">Against one trusted source</td><td style="text-align: left">A date, a statistic, a quote, a product detail</td></tr>
+<tr><td style="text-align: left">Something you'll act on</td><td style="text-align: left">Against an official source, or a person who knows</td><td style="text-align: left">A rule, a deadline, a recipe for someone with an allergy, a formula for your budget</td></tr>
+<tr><td style="text-align: left">About health, law, money, or safety</td><td style="text-align: left">With a qualified professional</td><td style="text-align: left">Medication, a contract, a tax question, an electrical repair</td></tr>
+</tbody></table>
+
+<h2>Quick ways to check</h2>
+
+<ul>
+<li><strong>Ask where it came from.</strong> "What's your source for that?" Then open the source and make sure it exists and says what the assistant claims. Made-up sources are common.</li>
+<li><strong>Ask how sure it is.</strong> "How confident are you?" and "What might be wrong with this answer?" often bring out the weak spots.</li>
+<li><strong>Ask again, differently.</strong> Rephrase the question, or ask in a new chat. If the answers disagree, neither is safe to rely on.</li>
+<li><strong>Try a second assistant.</strong> If two assistants agree, it's a good sign, though not proof.</li>
+<li><strong>Search it yourself.</strong> For a fact or figure, a quick web search often settles it, especially on an official site.</li>
+<li><strong>Test it.</strong> For a formula, a recipe, or instructions, try it on something small first: a few rows, a half batch, or a copy of the file.</li>
+<li><strong>Check the date.</strong> Ask "Is this likely to be out of date?" for anything about prices, rules, or products.</li>
+</ul>
+
+<h2>Warning signs</h2>
+
+<p>Be extra careful when an answer:</p>
+<ul>
+<li>Gives very precise numbers, names, or quotes for something obscure.</li>
+<li>Cites a study, case, or article you can't find anywhere.</li>
+<li>Changes its answer as soon as you push back, or agrees with everything you say.</li>
+<li>Is about something very recent, very local, or very specialized.</li>
+<li>Sounds like exactly what you hoped to hear.</li>
+</ul>
+
+<h2>Checking summaries</h2>
+
+<p>When an assistant summarizes a document, meeting, or email thread for you:</p>
+<ul>
+<li>Skim the original for anything important the summary left out.</li>
+<li>Check that names, numbers, and dates in the summary match the original.</li>
+<li>Ask "What did you leave out?" or "Quote the part of the document that says this."</li>
+</ul>
+
+<p>My page on <a href="/ai-risks">the risks of using AI</a> explains why assistants get things wrong in the first place.</p>
+		</div>
+		<webui-drawer slot="left" class="nav elevation-20" docked="true" data-state="slot|docked" data-moveable data-dockable>
+			<webui-flex justify="center" slot="header">
+				<webui-stoic-dreams-logo title="Agent Squire Logo" text="Agent" text2="Squire"></webui-stoic-dreams-logo>
+			</webui-flex>
+			<webui-nav routes="/nav.json" data-subscribe="app-nav-routes:setNavRoutes"></webui-nav>
+		</webui-drawer>
+		<webui-drawer slot="right" class="shared elevation-20" data-stopclick data-moveable data-state="slot">
+		</webui-drawer>
+		<header slot="header">
+			<button aria-label="open navigation menu" data-toggleclass=".nav|open" class="elevation-10 pa-1 mx-1">
+				<webui-icon icon="hamburger"></webui-icon>
+			</button>
+			<h1 data-subscribe="page-title:innerHTML">Checking AI Answers</h1>
+			<h2 data-subscribe="page-subtitle:innerHTML">How to tell when to trust what your assistant says</h2>
+			<webui-flex grow></webui-flex>
+			<webui-feedback title="Provide us your feedback" data-post="https://api.myfi.ws/feedback/new" data-json-name="message">
+				<p>You can also come <a href="https://discord.gg/5X4YSDFdHD">chat with us on the Stoic Dreams discord server.</a></p>
+			</webui-feedback>
+			<webui-alerts title="View your notifications" data-title="My Alerts" data-toggleclass=".shared|open"></webui-alerts>
+			<webui-myfi-info sign-in-label="Sign In">
+				<template slot="panel-content">
+					<webui-alert show variant="info">Example Account Panel</webui-alert>
+				</template>
+			</webui-myfi-info>
+		</header>
+		<noscript>Javascript is required to view this site</noscript>
+		<webui-page-footer copyright="2016" company="Stoic Dreams">
+			<webui-next-page theme="tertiary" data-subscribe="page-next-page"></webui-next-page>
+			<app-ai-disclaimer></app-ai-disclaimer>
+			<webui-flex class="my-3" justify="center" wrap>
+				<webui-link href="/about" icon="circle_exclamation|backing|bordered">About Agent Squire</webui-link>
+				<webui-link href="/contact" icon="messages|fill|shade:tri">Contact Stoic Dreams</webui-link>
+				<webui-link href="/privacy" icon="shield_exclamation|backing|bordered">Privacy</webui-link>
+				<webui-link href="/terms" icon="handshake|fill|shade:tri">Terms & Conditions</webui-link>
+			</webui-flex>
+			<webui-stoic-social-links class="mb-2"></webui-stoic-social-links>
+		</webui-page-footer>
+	</webui-app>
+</body>
+
+</html>

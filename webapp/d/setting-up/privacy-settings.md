@@ -1,4 +1,4 @@
-<webui-data data-page-title="Privacy Settings" data-page-subtitle="Control what your assistant keeps and learns from"></webui-data>
+<webui-data data-page-title="Privacy Settings" data-page-subtitle="Control what your assistant keeps and learns from" data-page-description="The privacy settings that matter in ChatGPT, Claude, Gemini, and Copilot, where to find them, and what to do if you've already shared too much."></webui-data>
 
 <webui-quote theme="title">
 A few minutes in your assistant's settings can make a big difference to what it keeps about you. Here's what to look for, where to find it in the big four, and what to do if you've already shared something you'd rather not have.

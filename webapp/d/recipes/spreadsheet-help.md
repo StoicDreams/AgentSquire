@@ -1,4 +1,4 @@
-<webui-data data-page-title="Get Help with a Spreadsheet" data-page-subtitle="A recipe for formulas that work"></webui-data>
+<webui-data data-page-title="Get Help with a Spreadsheet" data-page-subtitle="A recipe for formulas that work" data-page-description="A step-by-step recipe, with a prompt to copy, for getting a spreadsheet formula from your AI assistant, with an explanation and a way to check it."></webui-data>
 
 <webui-quote theme="title">
 You know what you want your spreadsheet to tell you, but not the formula to get there. Describe your sheet and the answer you want, and your assistant will write the formula, explain it, and tell you how to check it.

@@ -1,4 +1,4 @@
-<webui-data data-page-title="About {APP_NAME}" data-page-subtitle="Plain-language help with AI agents"></webui-data>
+<webui-data data-page-title="About {APP_NAME}" data-page-subtitle="Plain-language help with AI agents" data-page-description="Meet Orin, the squire behind Agent Squire: plain-language help for people who want AI assistants to do real work, with no coding needed."></webui-data>
 
 <webui-page-segment elevation="10">
 <webui-media src="/Logo.svg" alt="Orin, the Agent Squire: a gold robot on a blue shield" size="128">

@@ -1,4 +1,4 @@
-<webui-data data-page-title="Get Up to Speed on a Topic" data-page-subtitle="A recipe for learning the basics fast"></webui-data>
+<webui-data data-page-title="Get Up to Speed on a Topic" data-page-subtitle="A recipe for learning the basics fast" data-page-description="A step-by-step recipe, with a prompt to copy, for using an AI assistant to learn the basics of a new topic fast and know what to double-check."></webui-data>
 
 <webui-quote theme="title">
 A new topic can be overwhelming: too many articles, too much jargon, and no idea what actually matters. Tell your assistant what you need to know and why, and it will give you the basics, the parts that matter for you, and what to check.

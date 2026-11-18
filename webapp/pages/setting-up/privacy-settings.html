@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZHF4JJT65"></script>
+	<script>
+		if (location.hostname !== 'localhost') {
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+			gtag('config', 'G-8ZHF4JJT65');
+		}
+	</script>
+	<title>Privacy Settings: Control what your assistant keeps and learns from</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index, follow">
+	<base href="/" />
+	<script type="text/javascript">
+		navigator.serviceWorker.register('service-worker.min.js');
+	</script>
+
+	<link rel="dns-prefetch" href="https://cdn.myfi.ws" />
+	<link rel="dns-prefetch" href="https://api.myfi.ws" />
+	<link rel="preconnect" href="https://cdn.myfi.ws">
+	<link rel="preconnect" href="https://api.myfi.ws">
+
+	<link href="Logo.svg?v=53846f7665" rel="icon" type="image/svg+xml" sizes="any" />
+	<link rel="manifest" href="app.webmanifest?v=8a559d27a9">
+
+	<script>
+		// Web UI loads from the local MyFiCDN server (MyFiCDN/PowerShell/RunLocal.ps1) when the site runs on localhost,
+		// so framework changes show before they are published, and from cdn.myfi.ws everywhere else.
+		window.webuiCdn = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname) ? 'http://localhost:3180/' : 'https://cdn.myfi.ws/';
+		document.write('<link href="' + webuiCdn + 'css/webui.min.css" rel="stylesheet" />');
+	</script>
+	<link href="css/app.min.css?v=9bb04149c5" rel="stylesheet" />
+	<script>document.write('<script src="' + webuiCdn + 'webui/loader.min.js"></' + 'script>');</script>
+
+	<!-- Prerendered pages from webapp_post_build prerender. Release builds copy them to the site root. -->
+
+	<!--Web Worker-->
+	<script type="module" src="main.js?v=cea15cbf4f"></script>
+	<!--End Web Worker-->
+
+	<meta name="theme-color" content="#1f4fbf" />
+
+	<meta name="author" content="Erik Gassler">
+	<meta name="description" content="The privacy settings that matter in ChatGPT, Claude, Gemini, and Copilot, where to find them, and what to do if you've already shared too much.">
+
+	<meta property="og:image" content="https://www.agentsquire.com/img/agent-squire-share.png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Agent Squire: your guide to AI agents">
+	<meta property="og:title" content="Privacy Settings: Control what your assistant keeps and learns from">
+	<meta property="og:url" content="https://www.agentsquire.com/setting-up/privacy-settings">
+	<meta property="og:description" content="The privacy settings that matter in ChatGPT, Claude, Gemini, and Copilot, where to find them, and what to do if you've already shared too much.">
+
+	<meta name="twitter:title" content="Privacy Settings: Control what your assistant keeps and learns from">
+	<meta name="twitter:url" content="https://www.agentsquire.com/setting-up/privacy-settings">
+	<meta name="twitter:site" content="@stoicdreamsllc">
+	<meta name="twitter:description" content="The privacy settings that matter in ChatGPT, Claude, Gemini, and Copilot, where to find them, and what to do if you've already shared too much.">
+	<meta name="twitter:image" content="https://www.agentsquire.com/img/agent-squire-share.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="canonical" href="https://www.agentsquire.com/setting-up/privacy-settings" />
+	<link rel="modulepreload" href="https://cdn.myfi.ws/js/mdparse.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="/wc/ai-disclaimer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/alerts.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/app.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/app-config.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/data.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/drawer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/feedback.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/flex.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/icon.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/link.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/myfi-info.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/nav.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/next-page.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/page-footer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/page-segment.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/quote.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-dreams-logo.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-social-links.min.js" crossorigin="anonymous" />
+	<meta name="webui-prerender" content="a5785618e4">
+</head>
+
+<body>
+	<webui-app-config src="appConfig.json"></webui-app-config>
+	<webui-app data-removeclass=".nav|open;.shared|open">
+		<div data-prerendered>
+<p>A few minutes in your assistant's settings can make a big difference to what it keeps about you. Here's what to look for, where to find it in the big four, and what to do if you've already shared something you'd rather not have.</p>
+
+<h2>What to look for</h2>
+
+<p>Every assistant has slightly different settings, but these are the ones that matter most.</p>
+<ul>
+<li><strong>Training on your chats:</strong> whether your conversations can be used to improve future versions. Many assistants leave this on unless you turn it off.</li>
+<li><strong>Chat history:</strong> how long your conversations are kept, and how to delete them.</li>
+<li><strong>Temporary chats:</strong> a private mode for one-off questions that aren't saved to your history or memory. It may be called temporary, incognito, or private.</li>
+<li><strong>Memory:</strong> what it has saved about you. See <a href="/setting-up/memory-and-projects">Memory and projects</a>.</li>
+<li><strong>Connected apps:</strong> which of your accounts it can reach. See <a href="/setting-up/connecting-your-apps">Connecting your apps</a>.</li>
+<li><strong>Shared links:</strong> any chats you've shared with a link, which anyone with the link can see.</li>
+</ul>
+<p>Turning off training usually only affects future chats. It doesn't delete what's already there.</p>
+
+<h2>Where to find them</h2>
+
+<p>These were checked in November 2026. Menus change, so if you can't find a setting, look under Settings for Privacy, Data, or Personalization.</p>
+<ul>
+<li><strong>ChatGPT:</strong> open Settings, then Data Controls, and look for "Improve the model for everyone". Temporary Chat is in the chat menu.</li>
+<li><strong>Claude:</strong> open Settings, then Privacy, and look for the setting about helping improve Claude. Incognito chats are available from a new chat.</li>
+<li><strong>Gemini:</strong> look for Gemini Apps Activity in your Google account or Gemini's settings. Turning off "Keep activity" stops chats being saved there, and gives you the option to delete past activity.</li>
+<li><strong>Microsoft Copilot:</strong> look in Settings under Privacy. Copilot's options have changed between versions, so what you see may differ. Check what it says about training, history, and memory.</li>
+</ul>
+<p>If you use an assistant through work or school, your organization controls many of these settings, and work accounts are often not used for training. Ask your IT team if you're unsure.</p>
+
+<h2>Good habits</h2>
+
+<ul>
+<li><strong>Decide on training once.</strong> Turn it off if you'd rather your chats weren't used, and check again after big app updates.</li>
+<li><strong>Use temporary chats for sensitive questions,</strong> like health or money worries.</li>
+<li><strong>Clean up now and then.</strong> Delete old chats you don't need, and review saved memories.</li>
+<li><strong>Remove shared links</strong> you no longer need.</li>
+<li><strong>Remember that settings aren't everything.</strong> Even with training off, companies may keep chats for a while for safety and legal reasons. The best protection is not sharing what you'd mind losing. See <a href="/staying-safe/what-not-to-share">What not to share</a>.</li>
+</ul>
+
+<h2>If you've already shared something</h2>
+
+<ol>
+<li><strong>Delete the chat,</strong> and remove any shared link to it.</li>
+<li><strong>Check memory</strong> and delete anything it saved from that chat.</li>
+<li><strong>Change any password or code</strong> you shared, and contact your bank if you shared financial details.</li>
+<li><strong>Turn off training</strong> if you haven't already, so future chats aren't used.</li>
+</ol>
+		</div>
+		<webui-drawer slot="left" class="nav elevation-20" docked="true" data-state="slot|docked" data-moveable data-dockable>
+			<webui-flex justify="center" slot="header">
+				<webui-stoic-dreams-logo title="Agent Squire Logo" text="Agent" text2="Squire"></webui-stoic-dreams-logo>
+			</webui-flex>
+			<webui-nav routes="/nav.json" data-subscribe="app-nav-routes:setNavRoutes"></webui-nav>
+		</webui-drawer>
+		<webui-drawer slot="right" class="shared elevation-20" data-stopclick data-moveable data-state="slot">
+		</webui-drawer>
+		<header slot="header">
+			<button aria-label="open navigation menu" data-toggleclass=".nav|open" class="elevation-10 pa-1 mx-1">
+				<webui-icon icon="hamburger"></webui-icon>
+			</button>
+			<h1 data-subscribe="page-title:innerHTML">Privacy Settings</h1>
+			<h2 data-subscribe="page-subtitle:innerHTML">Control what your assistant keeps and learns from</h2>
+			<webui-flex grow></webui-flex>
+			<webui-feedback title="Provide us your feedback" data-post="https://api.myfi.ws/feedback/new" data-json-name="message">
+				<p>You can also come <a href="https://discord.gg/5X4YSDFdHD">chat with us on the Stoic Dreams discord server.</a></p>
+			</webui-feedback>
+			<webui-alerts title="View your notifications" data-title="My Alerts" data-toggleclass=".shared|open"></webui-alerts>
+			<webui-myfi-info sign-in-label="Sign In">
+				<template slot="panel-content">
+					<webui-alert show variant="info">Example Account Panel</webui-alert>
+				</template>
+			</webui-myfi-info>
+		</header>
+		<noscript>Javascript is required to view this site</noscript>
+		<webui-page-footer copyright="2016" company="Stoic Dreams">
+			<webui-next-page theme="tertiary" data-subscribe="page-next-page"></webui-next-page>
+			<app-ai-disclaimer></app-ai-disclaimer>
+			<webui-flex class="my-3" justify="center" wrap>
+				<webui-link href="/about" icon="circle_exclamation|backing|bordered">About Agent Squire</webui-link>
+				<webui-link href="/contact" icon="messages|fill|shade:tri">Contact Stoic Dreams</webui-link>
+				<webui-link href="/privacy" icon="shield_exclamation|backing|bordered">Privacy</webui-link>
+				<webui-link href="/terms" icon="handshake|fill|shade:tri">Terms & Conditions</webui-link>
+			</webui-flex>
+			<webui-stoic-social-links class="mb-2"></webui-stoic-social-links>
+		</webui-page-footer>
+	</webui-app>
+</body>
+
+</html>

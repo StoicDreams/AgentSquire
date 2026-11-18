@@ -1,4 +1,4 @@
-<webui-data data-page-title="Checking AI Answers" data-page-subtitle="How to tell when to trust what your assistant says"></webui-data>
+<webui-data data-page-title="Checking AI Answers" data-page-subtitle="How to tell when to trust what your assistant says" data-page-description="How much checking an AI answer needs based on what's at stake, and quick ways to tell when to trust what your assistant says."></webui-data>
 
 <webui-quote theme="title">
 AI assistants are right a lot of the time, which makes it easy to stop checking. But they can be wrong while sounding completely sure. Here's how much checking each kind of answer needs, and quick ways to do it.

@@ -1,4 +1,4 @@
-<webui-data data-page-title="Spotting AI Scams" data-page-subtitle="Cloned voices, fake videos, and convincing messages"></webui-data>
+<webui-data data-page-title="Spotting AI Scams" data-page-subtitle="Cloned voices, fake videos, and convincing messages" data-page-description="How scammers use AI for convincing messages, cloned voices, and fake videos, and the simple habits that keep you safe from them."></webui-data>
 
 <webui-quote theme="title">
 Scammers use AI too. It helps them write convincing messages, copy voices, and make fake videos of real people. The good news: the oldest rule still works. Slow down, and check through a channel you trust.

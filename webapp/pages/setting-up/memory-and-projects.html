@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZHF4JJT65"></script>
+	<script>
+		if (location.hostname !== 'localhost') {
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+			gtag('config', 'G-8ZHF4JJT65');
+		}
+	</script>
+	<title>Memory and Projects: Help your assistant remember what matters</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index, follow">
+	<base href="/" />
+	<script type="text/javascript">
+		navigator.serviceWorker.register('service-worker.min.js');
+	</script>
+
+	<link rel="dns-prefetch" href="https://cdn.myfi.ws" />
+	<link rel="dns-prefetch" href="https://api.myfi.ws" />
+	<link rel="preconnect" href="https://cdn.myfi.ws">
+	<link rel="preconnect" href="https://api.myfi.ws">
+
+	<link href="Logo.svg?v=53846f7665" rel="icon" type="image/svg+xml" sizes="any" />
+	<link rel="manifest" href="app.webmanifest?v=8a559d27a9">
+
+	<script>
+		// Web UI loads from the local MyFiCDN server (MyFiCDN/PowerShell/RunLocal.ps1) when the site runs on localhost,
+		// so framework changes show before they are published, and from cdn.myfi.ws everywhere else.
+		window.webuiCdn = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname) ? 'http://localhost:3180/' : 'https://cdn.myfi.ws/';
+		document.write('<link href="' + webuiCdn + 'css/webui.min.css" rel="stylesheet" />');
+	</script>
+	<link href="css/app.min.css?v=9bb04149c5" rel="stylesheet" />
+	<script>document.write('<script src="' + webuiCdn + 'webui/loader.min.js"></' + 'script>');</script>
+
+	<!-- Prerendered pages from webapp_post_build prerender. Release builds copy them to the site root. -->
+
+	<!--Web Worker-->
+	<script type="module" src="main.js?v=cea15cbf4f"></script>
+	<!--End Web Worker-->
+
+	<meta name="theme-color" content="#1f4fbf" />
+
+	<meta name="author" content="Erik Gassler">
+	<meta name="description" content="How custom instructions, memory, and projects help your AI assistant remember what matters, when to use each, and how to keep them under control.">
+
+	<meta property="og:image" content="https://www.agentsquire.com/img/agent-squire-share.png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Agent Squire: your guide to AI agents">
+	<meta property="og:title" content="Memory and Projects: Help your assistant remember what matters">
+	<meta property="og:url" content="https://www.agentsquire.com/setting-up/memory-and-projects">
+	<meta property="og:description" content="How custom instructions, memory, and projects help your AI assistant remember what matters, when to use each, and how to keep them under control.">
+
+	<meta name="twitter:title" content="Memory and Projects: Help your assistant remember what matters">
+	<meta name="twitter:url" content="https://www.agentsquire.com/setting-up/memory-and-projects">
+	<meta name="twitter:site" content="@stoicdreamsllc">
+	<meta name="twitter:description" content="How custom instructions, memory, and projects help your AI assistant remember what matters, when to use each, and how to keep them under control.">
+	<meta name="twitter:image" content="https://www.agentsquire.com/img/agent-squire-share.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="canonical" href="https://www.agentsquire.com/setting-up/memory-and-projects" />
+	<link rel="modulepreload" href="https://cdn.myfi.ws/js/mdparse.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="/wc/ai-disclaimer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/alerts.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/app.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/app-config.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/data.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/drawer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/feedback.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/flex.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/icon.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/link.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/myfi-info.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/nav.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/next-page.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/page-footer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/page-segment.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/quote.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-dreams-logo.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-social-links.min.js" crossorigin="anonymous" />
+	<meta name="webui-prerender" content="e45798b64f">
+</head>
+
+<body>
+	<webui-app-config src="appConfig.json"></webui-app-config>
+	<webui-app data-removeclass=".nav|open;.shared|open">
+		<div data-prerendered>
+<p>Every new chat starts fresh, which means explaining yourself again and again. Three features fix that: custom instructions, memory, and projects. Here's what each one does, when to use it, and how to keep it under control.</p>
+
+<h2>Three ways to give your assistant context</h2>
+
+<table><thead><tr><th style="text-align: left">Feature</th><th style="text-align: left">What it is</th><th style="text-align: left">Best for</th></tr></thead><tbody>
+<tr><td style="text-align: left">Custom instructions</td><td style="text-align: left">A short note about you and how you like answers, read before every chat</td><td style="text-align: left">Who you are, your tone, and habits you always want</td></tr>
+<tr><td style="text-align: left">Memory</td><td style="text-align: left">Details the assistant saves from your chats and recalls later</td><td style="text-align: left">Facts that come up naturally, like your job or your kids' ages</td></tr>
+<tr><td style="text-align: left">Projects</td><td style="text-align: left">A space that groups related chats with their own files and instructions</td><td style="text-align: left">Ongoing work, like a house move, a class, or a client</td></tr>
+</tbody></table>
+<p>Each assistant names these a little differently. Look in its settings and sidebar for words like Personalization, Memory, Instructions, Projects, Gems, or Notebooks. Not every plan includes every feature, and they change often.</p>
+
+<h2>Custom instructions</h2>
+
+<p>Custom instructions are the simplest and most predictable of the three, because you write them yourself and they don't change unless you change them. Start here.</p>
+<p>The <a href="/instructions-builder">Instructions Builder</a> asks a few questions, writes them for you, and shows you where to paste them in ChatGPT, Claude, Gemini, or Copilot.</p>
+
+<h2>Memory</h2>
+
+<p>With memory turned on, an assistant can save details from your conversations, like "has two teenagers" or "is training for a half marathon", and use them in later chats without being told again. Some assistants also look back over your past chats for context.</p>
+<p>It's handy, but it means the assistant keeps more about you, and it can remember things wrongly or bring up an old detail where it doesn't belong.</p>
+<p><strong>Keep it under control</strong></p>
+<ul>
+<li><strong>See what it saved.</strong> Your assistant's settings usually show a list of saved memories. Read it now and then.</li>
+<li><strong>Delete what's wrong or private.</strong> Remove anything out of date, mistaken, or that you'd rather it didn't keep.</li>
+<li><strong>Tell it directly.</strong> You can usually say "remember that I'm vegetarian" or "forget that I mentioned my health condition".</li>
+<li><strong>Use a temporary chat for sensitive questions.</strong> Most assistants have a temporary, incognito, or private chat that isn't saved to memory or your history.</li>
+<li><strong>Turn it off</strong> if you'd rather each chat started clean. Custom instructions still work without memory.</li>
+</ul>
+
+<h2>Projects</h2>
+
+<p>A project is a folder for one piece of ongoing work. Chats inside it share the same files and instructions, and stay separate from your other chats. Good uses include:</p>
+<ul>
+<li><strong>Planning a move,</strong> with your checklist, budget, and the new home's details.</li>
+<li><strong>A class or course,</strong> with the syllabus and your notes.</li>
+<li><strong>A small business task,</strong> like your price list and the tone you use with customers.</li>
+<li><strong>A long project at home,</strong> like a garden plan or a family history.</li>
+</ul>
+<p><strong>How to set one up</strong></p>
+<ol>
+<li>Create a new project and give it a clear name.</li>
+<li>Add instructions for that project only, like "This project is about planning our move to Denver in June. Keep answers practical and budget-minded."</li>
+<li>Add the files it should know about. Remove personal details you don't need it to have first.</li>
+<li>Start your chats inside the project, so they all share the same background.</li>
+</ol>
+
+<h2>Which should I use?</h2>
+
+<ul>
+<li><strong>Start with custom instructions.</strong> They give the biggest improvement for the least effort.</li>
+<li><strong>Add a project</strong> when you find yourself pasting the same files or background into several chats.</li>
+<li><strong>Leave memory on or off</strong> depending on how you feel about the assistant keeping details about you. Either way, check what it has saved.</li>
+</ul>
+<p>For more on what assistants keep and how to limit it, see <a href="/setting-up/privacy-settings">Privacy settings</a>.</p>
+
+<p>Features and their names were checked in November 2026. They change often, so I'll keep this page up to date.</p>
+		</div>
+		<webui-drawer slot="left" class="nav elevation-20" docked="true" data-state="slot|docked" data-moveable data-dockable>
+			<webui-flex justify="center" slot="header">
+				<webui-stoic-dreams-logo title="Agent Squire Logo" text="Agent" text2="Squire"></webui-stoic-dreams-logo>
+			</webui-flex>
+			<webui-nav routes="/nav.json" data-subscribe="app-nav-routes:setNavRoutes"></webui-nav>
+		</webui-drawer>
+		<webui-drawer slot="right" class="shared elevation-20" data-stopclick data-moveable data-state="slot">
+		</webui-drawer>
+		<header slot="header">
+			<button aria-label="open navigation menu" data-toggleclass=".nav|open" class="elevation-10 pa-1 mx-1">
+				<webui-icon icon="hamburger"></webui-icon>
+			</button>
+			<h1 data-subscribe="page-title:innerHTML">Memory and Projects</h1>
+			<h2 data-subscribe="page-subtitle:innerHTML">Help your assistant remember what matters</h2>
+			<webui-flex grow></webui-flex>
+			<webui-feedback title="Provide us your feedback" data-post="https://api.myfi.ws/feedback/new" data-json-name="message">
+				<p>You can also come <a href="https://discord.gg/5X4YSDFdHD">chat with us on the Stoic Dreams discord server.</a></p>
+			</webui-feedback>
+			<webui-alerts title="View your notifications" data-title="My Alerts" data-toggleclass=".shared|open"></webui-alerts>
+			<webui-myfi-info sign-in-label="Sign In">
+				<template slot="panel-content">
+					<webui-alert show variant="info">Example Account Panel</webui-alert>
+				</template>
+			</webui-myfi-info>
+		</header>
+		<noscript>Javascript is required to view this site</noscript>
+		<webui-page-footer copyright="2016" company="Stoic Dreams">
+			<webui-next-page theme="tertiary" data-subscribe="page-next-page"></webui-next-page>
+			<app-ai-disclaimer></app-ai-disclaimer>
+			<webui-flex class="my-3" justify="center" wrap>
+				<webui-link href="/about" icon="circle_exclamation|backing|bordered">About Agent Squire</webui-link>
+				<webui-link href="/contact" icon="messages|fill|shade:tri">Contact Stoic Dreams</webui-link>
+				<webui-link href="/privacy" icon="shield_exclamation|backing|bordered">Privacy</webui-link>
+				<webui-link href="/terms" icon="handshake|fill|shade:tri">Terms & Conditions</webui-link>
+			</webui-flex>
+			<webui-stoic-social-links class="mb-2"></webui-stoic-social-links>
+		</webui-page-footer>
+	</webui-app>
+</body>
+
+</html>

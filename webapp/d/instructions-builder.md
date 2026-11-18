@@ -1,4 +1,4 @@
-<webui-data data-page-title="Instructions Builder" data-page-subtitle="Custom instructions for your AI assistant"></webui-data>
+<webui-data data-page-title="Instructions Builder" data-page-subtitle="Custom instructions for your AI assistant" data-page-description="Answer a few questions and get custom instructions to paste into ChatGPT, Claude, Gemini, or Copilot, so your assistant knows how you like answers."></webui-data>
 
 <webui-quote theme="title">
 Answer a few questions and I'll write custom instructions for you to paste into ChatGPT, Claude, Gemini, or Copilot. Your assistant will then know a little about you and how you like your answers, in every chat.

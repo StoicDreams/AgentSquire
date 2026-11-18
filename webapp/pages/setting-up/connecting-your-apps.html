@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZHF4JJT65"></script>
+	<script>
+		if (location.hostname !== 'localhost') {
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+			gtag('config', 'G-8ZHF4JJT65');
+		}
+	</script>
+	<title>Connecting Your Apps: Letting your assistant work with email, files, and calendars</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index, follow">
+	<base href="/" />
+	<script type="text/javascript">
+		navigator.serviceWorker.register('service-worker.min.js');
+	</script>
+
+	<link rel="dns-prefetch" href="https://cdn.myfi.ws" />
+	<link rel="dns-prefetch" href="https://api.myfi.ws" />
+	<link rel="preconnect" href="https://cdn.myfi.ws">
+	<link rel="preconnect" href="https://api.myfi.ws">
+
+	<link href="Logo.svg?v=53846f7665" rel="icon" type="image/svg+xml" sizes="any" />
+	<link rel="manifest" href="app.webmanifest?v=8a559d27a9">
+
+	<script>
+		// Web UI loads from the local MyFiCDN server (MyFiCDN/PowerShell/RunLocal.ps1) when the site runs on localhost,
+		// so framework changes show before they are published, and from cdn.myfi.ws everywhere else.
+		window.webuiCdn = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname) ? 'http://localhost:3180/' : 'https://cdn.myfi.ws/';
+		document.write('<link href="' + webuiCdn + 'css/webui.min.css" rel="stylesheet" />');
+	</script>
+	<link href="css/app.min.css?v=9bb04149c5" rel="stylesheet" />
+	<script>document.write('<script src="' + webuiCdn + 'webui/loader.min.js"></' + 'script>');</script>
+
+	<!-- Prerendered pages from webapp_post_build prerender. Release builds copy them to the site root. -->
+
+	<!--Web Worker-->
+	<script type="module" src="main.js?v=cea15cbf4f"></script>
+	<!--End Web Worker-->
+
+	<meta name="theme-color" content="#1f4fbf" />
+
+	<meta name="author" content="Erik Gassler">
+	<meta name="description" content="How connecting your email, files, and calendar to an AI assistant works, what MCP means, and how to do it safely.">
+
+	<meta property="og:image" content="https://www.agentsquire.com/img/agent-squire-share.png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Agent Squire: your guide to AI agents">
+	<meta property="og:title" content="Connecting Your Apps: Letting your assistant work with email, files, and calendars">
+	<meta property="og:url" content="https://www.agentsquire.com/setting-up/connecting-your-apps">
+	<meta property="og:description" content="How connecting your email, files, and calendar to an AI assistant works, what MCP means, and how to do it safely.">
+
+	<meta name="twitter:title" content="Connecting Your Apps: Letting your assistant work with email, files, and calendars">
+	<meta name="twitter:url" content="https://www.agentsquire.com/setting-up/connecting-your-apps">
+	<meta name="twitter:site" content="@stoicdreamsllc">
+	<meta name="twitter:description" content="How connecting your email, files, and calendar to an AI assistant works, what MCP means, and how to do it safely.">
+	<meta name="twitter:image" content="https://www.agentsquire.com/img/agent-squire-share.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="canonical" href="https://www.agentsquire.com/setting-up/connecting-your-apps" />
+	<link rel="modulepreload" href="https://cdn.myfi.ws/js/mdparse.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="/wc/ai-disclaimer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/alerts.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/app.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/app-config.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/data.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/drawer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/feedback.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/flex.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/icon.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/link.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/myfi-info.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/nav.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/next-page.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/page-footer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/page-segment.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/quote.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-dreams-logo.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-social-links.min.js" crossorigin="anonymous" />
+	<meta name="webui-prerender" content="3c50ae0d58">
+</head>
+
+<body>
+	<webui-app-config src="appConfig.json"></webui-app-config>
+	<webui-app data-removeclass=".nav|open;.shared|open">
+		<div data-prerendered>
+<p>An assistant that can read your email, find a file, or check your calendar saves a lot of copying and pasting. It's also a big step in trust. Here's how connecting apps works, what MCP means, and how to do it safely.</p>
+
+<h2>What connecting does</h2>
+
+<p>Out of the box, an assistant only sees what you type or upload. When you connect an app, like your email, cloud storage, or calendar, you give the assistant permission to reach into that app for you. Then you can ask things like:</p>
+<ul>
+<li>"Find the email from the plumber with the quote, and summarize it."</li>
+<li>"What's on my calendar next Tuesday, and is there time for a two-hour meeting?"</li>
+<li>"Find last year's budget spreadsheet in my drive and compare it with this year's."</li>
+</ul>
+<p>Some connections can only read. Others can also act: draft and send emails, create calendar events, or edit files. Assistants call these connections by different names, such as connectors, apps, connected apps, or plugins.</p>
+
+<h2>Built in or connected</h2>
+
+<ul>
+<li><strong>Built in:</strong> Gemini works with Gmail, Docs, and other Google apps through your Google account, and Copilot works with Word, Outlook, and Excel through Microsoft 365. If you already live in one of those, this is the easiest way to start.</li>
+<li><strong>Connected:</strong> ChatGPT, Claude, and the others can connect to many outside apps, including Google and Microsoft ones, once you sign in to them and grant permission. Which apps are available, and on which plans, varies and changes often.</li>
+</ul>
+
+<h2>What is MCP?</h2>
+
+<p>You may see "MCP" mentioned. It stands for <strong>Model Context Protocol</strong>, and it's a shared standard for connecting AI assistants to other apps and services.</p>
+<p>Think of it like a universal plug. Before standards like this, every assistant needed its own custom connection to every app. With MCP, a company can build one connector for its app, and any assistant that supports MCP can use it. Many assistants and apps now support it.</p>
+<p>You don't need to know how it works to use it. What matters for you is the same as with any connection: what can it see, what can it do, and do you trust who made it?</p>
+
+<h2>Connect safely</h2>
+
+<ol>
+<li><strong>Start with read-only, if you can.</strong> Let it find and summarize before you let it send or change anything.</li>
+<li><strong>Connect only what you need.</strong> One email account is plenty to start. You don't have to connect everything.</li>
+<li><strong>Read the permission screen.</strong> When you sign in to connect, the app shows what the assistant will be allowed to do. If it asks for more than you expected, stop.</li>
+<li><strong>Keep approvals on.</strong> Choose settings that ask you before it sends, deletes, buys, or posts anything, and read what it's about to do before you say yes.</li>
+<li><strong>Use official connectors.</strong> Prefer the ones offered inside your assistant or by the app's own company. Be wary of connectors from sources you don't know.</li>
+<li><strong>Watch for hidden instructions.</strong> An email or document can contain instructions written for the AI. If the assistant suddenly suggests something strange after reading something, don't approve it. My page on <a href="/ai-risks">the risks of using AI</a> explains this "prompt injection".</li>
+<li><strong>Follow your work's rules.</strong> Don't connect work accounts to a personal assistant unless your work allows it.</li>
+<li><strong>Disconnect what you don't use.</strong> Review your connected apps every few months and remove the ones you no longer need.</li>
+</ol>
+
+<h2>A good first connection</h2>
+
+<p>Try connecting your calendar or cloud storage, read-only, and ask simple questions: "What do I have on this week?" or "Find my car insurance documents." Once you're comfortable with how it finds and summarizes, decide whether you want it to do more.</p>
+
+<p>What each assistant can connect to changes often. This page was checked in November 2026.</p>
+		</div>
+		<webui-drawer slot="left" class="nav elevation-20" docked="true" data-state="slot|docked" data-moveable data-dockable>
+			<webui-flex justify="center" slot="header">
+				<webui-stoic-dreams-logo title="Agent Squire Logo" text="Agent" text2="Squire"></webui-stoic-dreams-logo>
+			</webui-flex>
+			<webui-nav routes="/nav.json" data-subscribe="app-nav-routes:setNavRoutes"></webui-nav>
+		</webui-drawer>
+		<webui-drawer slot="right" class="shared elevation-20" data-stopclick data-moveable data-state="slot">
+		</webui-drawer>
+		<header slot="header">
+			<button aria-label="open navigation menu" data-toggleclass=".nav|open" class="elevation-10 pa-1 mx-1">
+				<webui-icon icon="hamburger"></webui-icon>
+			</button>
+			<h1 data-subscribe="page-title:innerHTML">Connecting Your Apps</h1>
+			<h2 data-subscribe="page-subtitle:innerHTML">Letting your assistant work with email, files, and calendars</h2>
+			<webui-flex grow></webui-flex>
+			<webui-feedback title="Provide us your feedback" data-post="https://api.myfi.ws/feedback/new" data-json-name="message">
+				<p>You can also come <a href="https://discord.gg/5X4YSDFdHD">chat with us on the Stoic Dreams discord server.</a></p>
+			</webui-feedback>
+			<webui-alerts title="View your notifications" data-title="My Alerts" data-toggleclass=".shared|open"></webui-alerts>
+			<webui-myfi-info sign-in-label="Sign In">
+				<template slot="panel-content">
+					<webui-alert show variant="info">Example Account Panel</webui-alert>
+				</template>
+			</webui-myfi-info>
+		</header>
+		<noscript>Javascript is required to view this site</noscript>
+		<webui-page-footer copyright="2016" company="Stoic Dreams">
+			<webui-next-page theme="tertiary" data-subscribe="page-next-page"></webui-next-page>
+			<app-ai-disclaimer></app-ai-disclaimer>
+			<webui-flex class="my-3" justify="center" wrap>
+				<webui-link href="/about" icon="circle_exclamation|backing|bordered">About Agent Squire</webui-link>
+				<webui-link href="/contact" icon="messages|fill|shade:tri">Contact Stoic Dreams</webui-link>
+				<webui-link href="/privacy" icon="shield_exclamation|backing|bordered">Privacy</webui-link>
+				<webui-link href="/terms" icon="handshake|fill|shade:tri">Terms & Conditions</webui-link>
+			</webui-flex>
+			<webui-stoic-social-links class="mb-2"></webui-stoic-social-links>
+		</webui-page-footer>
+	</webui-app>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-<webui-data data-page-title="What Is an AI Assistant?" data-page-subtitle="Assistants, chatbots, and agents in plain words"></webui-data>
+<webui-data data-page-title="What Is an AI Assistant?" data-page-subtitle="Assistants, chatbots, and agents in plain words" data-page-description="What chatbots, AI assistants, and AI agents are, what they're good at, and where they fall short, explained without the jargon."></webui-data>
 
 <webui-quote theme="title">
 You've heard the names: ChatGPT, Claude, Gemini, Copilot. You've probably heard "AI agent" too. Let's sort out what these things are, what they're good at, and where they fall short, without the jargon.

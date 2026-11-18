@@ -1,4 +1,4 @@
-<webui-data data-page-title="Your First Chat" data-page-subtitle="How to get a good answer from an AI assistant"></webui-data>
+<webui-data data-page-title="Your First Chat" data-page-subtitle="How to get a good answer from an AI assistant" data-page-description="How to set up an AI assistant, give it a small real job, and get a good answer on your very first chat."></webui-data>
 
 <webui-quote theme="title">
 The first time you talk to an AI assistant, it's tempting to ask it something tricky to test it. You'll learn much more by giving it a small, real job. Here's how to set up, what to ask, and how to get a good answer.

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZHF4JJT65"></script>
+	<script>
+		if (location.hostname !== 'localhost') {
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+			gtag('config', 'G-8ZHF4JJT65');
+		}
+	</script>
+	<title>What Not to Share: Keep private details out of your AI chats</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index, follow">
+	<base href="/" />
+	<script type="text/javascript">
+		navigator.serviceWorker.register('service-worker.min.js');
+	</script>
+
+	<link rel="dns-prefetch" href="https://cdn.myfi.ws" />
+	<link rel="dns-prefetch" href="https://api.myfi.ws" />
+	<link rel="preconnect" href="https://cdn.myfi.ws">
+	<link rel="preconnect" href="https://api.myfi.ws">
+
+	<link href="Logo.svg?v=53846f7665" rel="icon" type="image/svg+xml" sizes="any" />
+	<link rel="manifest" href="app.webmanifest?v=8a559d27a9">
+
+	<script>
+		// Web UI loads from the local MyFiCDN server (MyFiCDN/PowerShell/RunLocal.ps1) when the site runs on localhost,
+		// so framework changes show before they are published, and from cdn.myfi.ws everywhere else.
+		window.webuiCdn = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname) ? 'http://localhost:3180/' : 'https://cdn.myfi.ws/';
+		document.write('<link href="' + webuiCdn + 'css/webui.min.css" rel="stylesheet" />');
+	</script>
+	<link href="css/app.min.css?v=9bb04149c5" rel="stylesheet" />
+	<script>document.write('<script src="' + webuiCdn + 'webui/loader.min.js"></' + 'script>');</script>
+
+	<!-- Prerendered pages from webapp_post_build prerender. Release builds copy them to the site root. -->
+
+	<!--Web Worker-->
+	<script type="module" src="main.js?v=cea15cbf4f"></script>
+	<!--End Web Worker-->
+
+	<meta name="theme-color" content="#1f4fbf" />
+
+	<meta name="author" content="Erik Gassler">
+	<meta name="description" content="What to keep out of your AI chats, from passwords to health details, and how to still get help with sensitive things safely.">
+
+	<meta property="og:image" content="https://www.agentsquire.com/img/agent-squire-share.png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Agent Squire: your guide to AI agents">
+	<meta property="og:title" content="What Not to Share: Keep private details out of your AI chats">
+	<meta property="og:url" content="https://www.agentsquire.com/staying-safe/what-not-to-share">
+	<meta property="og:description" content="What to keep out of your AI chats, from passwords to health details, and how to still get help with sensitive things safely.">
+
+	<meta name="twitter:title" content="What Not to Share: Keep private details out of your AI chats">
+	<meta name="twitter:url" content="https://www.agentsquire.com/staying-safe/what-not-to-share">
+	<meta name="twitter:site" content="@stoicdreamsllc">
+	<meta name="twitter:description" content="What to keep out of your AI chats, from passwords to health details, and how to still get help with sensitive things safely.">
+	<meta name="twitter:image" content="https://www.agentsquire.com/img/agent-squire-share.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="canonical" href="https://www.agentsquire.com/staying-safe/what-not-to-share" />
+	<link rel="modulepreload" href="https://cdn.myfi.ws/js/mdparse.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="/wc/ai-disclaimer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/alerts.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/app.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/app-config.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/data.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/drawer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/feedback.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/flex.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/icon.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/link.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/myfi-info.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/nav.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/next-page.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/page-footer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/page-segment.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/quote.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-dreams-logo.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-social-links.min.js" crossorigin="anonymous" />
+	<meta name="webui-prerender" content="fef8ac5802">
+</head>
+
+<body>
+	<webui-app-config src="appConfig.json"></webui-app-config>
+	<webui-app data-removeclass=".nav|open;.shared|open">
+		<div data-prerendered>
+<p>Talking to an AI assistant feels private, like thinking out loud. It isn't. What you type goes to the company that runs it, where it may be stored, read, or used for training. Here's what to keep out, and how to still get help with sensitive things.</p>
+
+<h2>Never share</h2>
+
+<ul>
+<li><strong>Passwords, PINs, and security codes,</strong> including one-time codes sent to your phone.</li>
+<li><strong>Card, bank, and account numbers.</strong></li>
+<li><strong>Government ID numbers,</strong> like a Social Security number, passport, or driver's license number.</li>
+<li><strong>Answers to security questions,</strong> like your mother's maiden name or first pet.</li>
+<li><strong>Login details for other people,</strong> or anything that would let someone into an account.</li>
+</ul>
+<p>No legitimate assistant needs any of these to help you. If an assistant, app, or website that claims to be one asks for them, treat it as a scam.</p>
+
+<h2>Think twice before sharing</h2>
+
+<ul>
+<li><strong>Health details,</strong> yours or anyone else's.</li>
+<li><strong>Money details,</strong> like your income, debts, or exact balances.</li>
+<li><strong>Legal matters,</strong> like a dispute, a divorce, or anything involving the police.</li>
+<li><strong>Other people's information,</strong> like names, addresses, phone numbers, and photos of friends, family, or customers.</li>
+<li><strong>Work information,</strong> like customer data, contracts, plans, or anything marked confidential. Many workplaces don't allow it in personal AI accounts.</li>
+<li><strong>Your exact location and daily routine,</strong> like your home address and when you're away.</li>
+<li><strong>Photos and documents</strong> with private details in them, like a bill showing your account number or a screenshot of your messages.</li>
+</ul>
+
+<h2>How to get help anyway</h2>
+
+<p>You can still get help with private matters by leaving out what identifies you.</p>
+<ul>
+<li><strong>Swap in made-up details.</strong> "My friend Alex" instead of a real name, or "about $50,000" instead of an exact figure.</li>
+<li><strong>Describe instead of pasting.</strong> Explain what a letter says instead of uploading the letter with your account number on it.</li>
+<li><strong>Cover or crop.</strong> Black out names, numbers, and addresses in screenshots and documents before you upload them.</li>
+<li><strong>Ask in general terms.</strong> "What are common reasons a tax refund is delayed?" works without your tax details.</li>
+<li><strong>Use a temporary chat</strong> for sensitive questions, so they're not saved to your history or memory.</li>
+<li><strong>Check your settings.</strong> Turn off training on your chats if you prefer. See <a href="/setting-up/privacy-settings">Privacy settings</a>.</li>
+</ul>
+
+<h2>A quick test</h2>
+
+<p>Before you press send, ask yourself: <strong>would I be comfortable if a stranger at the company read this?</strong> If not, take out the private parts, or don't send it.</p>
+
+<h2>If you've already shared something</h2>
+
+<p>Delete the chat and any shared link to it, remove anything saved to memory, and change any password or code you shared. If you shared financial details, contact your bank. <a href="/setting-up/privacy-settings">Privacy settings</a> has the steps.</p>
+		</div>
+		<webui-drawer slot="left" class="nav elevation-20" docked="true" data-state="slot|docked" data-moveable data-dockable>
+			<webui-flex justify="center" slot="header">
+				<webui-stoic-dreams-logo title="Agent Squire Logo" text="Agent" text2="Squire"></webui-stoic-dreams-logo>
+			</webui-flex>
+			<webui-nav routes="/nav.json" data-subscribe="app-nav-routes:setNavRoutes"></webui-nav>
+		</webui-drawer>
+		<webui-drawer slot="right" class="shared elevation-20" data-stopclick data-moveable data-state="slot">
+		</webui-drawer>
+		<header slot="header">
+			<button aria-label="open navigation menu" data-toggleclass=".nav|open" class="elevation-10 pa-1 mx-1">
+				<webui-icon icon="hamburger"></webui-icon>
+			</button>
+			<h1 data-subscribe="page-title:innerHTML">What Not to Share</h1>
+			<h2 data-subscribe="page-subtitle:innerHTML">Keep private details out of your AI chats</h2>
+			<webui-flex grow></webui-flex>
+			<webui-feedback title="Provide us your feedback" data-post="https://api.myfi.ws/feedback/new" data-json-name="message">
+				<p>You can also come <a href="https://discord.gg/5X4YSDFdHD">chat with us on the Stoic Dreams discord server.</a></p>
+			</webui-feedback>
+			<webui-alerts title="View your notifications" data-title="My Alerts" data-toggleclass=".shared|open"></webui-alerts>
+			<webui-myfi-info sign-in-label="Sign In">
+				<template slot="panel-content">
+					<webui-alert show variant="info">Example Account Panel</webui-alert>
+				</template>
+			</webui-myfi-info>
+		</header>
+		<noscript>Javascript is required to view this site</noscript>
+		<webui-page-footer copyright="2016" company="Stoic Dreams">
+			<webui-next-page theme="tertiary" data-subscribe="page-next-page"></webui-next-page>
+			<app-ai-disclaimer></app-ai-disclaimer>
+			<webui-flex class="my-3" justify="center" wrap>
+				<webui-link href="/about" icon="circle_exclamation|backing|bordered">About Agent Squire</webui-link>
+				<webui-link href="/contact" icon="messages|fill|shade:tri">Contact Stoic Dreams</webui-link>
+				<webui-link href="/privacy" icon="shield_exclamation|backing|bordered">Privacy</webui-link>
+				<webui-link href="/terms" icon="handshake|fill|shade:tri">Terms & Conditions</webui-link>
+			</webui-flex>
+			<webui-stoic-social-links class="mb-2"></webui-stoic-social-links>
+		</webui-page-footer>
+	</webui-app>
+</body>
+
+</html>

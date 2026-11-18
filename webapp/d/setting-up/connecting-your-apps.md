@@ -1,4 +1,4 @@
-<webui-data data-page-title="Connecting Your Apps" data-page-subtitle="Letting your assistant work with email, files, and calendars"></webui-data>
+<webui-data data-page-title="Connecting Your Apps" data-page-subtitle="Letting your assistant work with email, files, and calendars" data-page-description="How connecting your email, files, and calendar to an AI assistant works, what MCP means, and how to do it safely."></webui-data>
 
 <webui-quote theme="title">
 An assistant that can read your email, find a file, or check your calendar saves a lot of copying and pasting. It's also a big step in trust. Here's how connecting apps works, what MCP means, and how to do it safely.

@@ -1,4 +1,4 @@
-<webui-data data-page-title="The Risks of Using AI" data-page-subtitle="What can go wrong, and how to protect yourself"></webui-data>
+<webui-data data-page-title="The Risks of Using AI" data-page-subtitle="What can go wrong, and how to protect yourself" data-page-description="An honest look at what can go wrong with AI assistants, from made-up facts to privacy and scams, and what you can do about each risk."></webui-data>
 
 <webui-quote theme="title">
 I'm here to help you get real work out of AI assistants, and part of that is being honest about where they fall short. AI can save you hours, but it can also be confidently wrong, keep what you tell it, and be fooled in ways people aren't. Here's what to watch for, and what to do about each risk.

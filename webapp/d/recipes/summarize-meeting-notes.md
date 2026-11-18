@@ -1,4 +1,4 @@
-<webui-data data-page-title="Summarize Meeting Notes" data-page-subtitle="A recipe for decisions and next steps"></webui-data>
+<webui-data data-page-title="Summarize Meeting Notes" data-page-subtitle="A recipe for decisions and next steps" data-page-description="A step-by-step recipe, with a prompt to copy, for turning rough meeting notes into a summary of decisions, owners, and open questions."></webui-data>
 
 <webui-quote theme="title">
 Meeting notes are only useful if someone reads them. Give your assistant your notes, and it will pull out what was decided, who is doing what, and what is still open, in a summary people will actually read.

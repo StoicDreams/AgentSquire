@@ -1,4 +1,4 @@
-<webui-data data-page-title="Prompt Cards" data-page-subtitle="Fill-in-the-blank prompts for real work"></webui-data>
+<webui-data data-page-title="Prompt Cards" data-page-subtitle="Fill-in-the-blank prompts for real work" data-page-description="Fill-in-the-blank prompts for everyday tasks like emails, meetings, and trips, that get your AI assistant to do the job well the first time."></webui-data>
 
 <webui-quote theme="title">
 Pick a task, fill in the blanks, and copy a prompt that gets your assistant to do the job well the first time. These work in ChatGPT, Claude, Gemini, Copilot, or any other assistant.

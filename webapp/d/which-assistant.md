@@ -1,4 +1,4 @@
-<webui-data data-page-title="Which Assistant Fits Me?" data-page-subtitle="A short quiz to find your match"></webui-data>
+<webui-data data-page-title="Which Assistant Fits Me?" data-page-subtitle="A short quiz to find your match" data-page-description="Answer three quick questions to find out whether ChatGPT, Claude, Gemini, or Copilot is the best AI assistant for you to try first, and why."></webui-data>
 
 <webui-quote theme="title">
 ChatGPT, Claude, Gemini, or Copilot? Answer three quick questions and I'll suggest which one to try first, and tell you why.

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZHF4JJT65"></script>
+	<script>
+		if (location.hostname !== 'localhost') {
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+			gtag('config', 'G-8ZHF4JJT65');
+		}
+	</script>
+	<title>Choosing an Assistant: ChatGPT, Claude, Gemini, and Copilot side by side</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index, follow">
+	<base href="/" />
+	<script type="text/javascript">
+		navigator.serviceWorker.register('service-worker.min.js');
+	</script>
+
+	<link rel="dns-prefetch" href="https://cdn.myfi.ws" />
+	<link rel="dns-prefetch" href="https://api.myfi.ws" />
+	<link rel="preconnect" href="https://cdn.myfi.ws">
+	<link rel="preconnect" href="https://api.myfi.ws">
+
+	<link href="Logo.svg?v=53846f7665" rel="icon" type="image/svg+xml" sizes="any" />
+	<link rel="manifest" href="app.webmanifest?v=8a559d27a9">
+
+	<script>
+		// Web UI loads from the local MyFiCDN server (MyFiCDN/PowerShell/RunLocal.ps1) when the site runs on localhost,
+		// so framework changes show before they are published, and from cdn.myfi.ws everywhere else.
+		window.webuiCdn = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname) ? 'http://localhost:3180/' : 'https://cdn.myfi.ws/';
+		document.write('<link href="' + webuiCdn + 'css/webui.min.css" rel="stylesheet" />');
+	</script>
+	<link href="css/app.min.css?v=9bb04149c5" rel="stylesheet" />
+	<script>document.write('<script src="' + webuiCdn + 'webui/loader.min.js"></' + 'script>');</script>
+
+	<!-- Prerendered pages from webapp_post_build prerender. Release builds copy them to the site root. -->
+
+	<!--Web Worker-->
+	<script type="module" src="main.js?v=cea15cbf4f"></script>
+	<!--End Web Worker-->
+
+	<meta name="theme-color" content="#1f4fbf" />
+
+	<meta name="author" content="Erik Gassler">
+	<meta name="description" content="ChatGPT, Claude, Gemini, and Copilot side by side, and how to pick the one that fits where you work, the apps you use, and how you like to talk.">
+
+	<meta property="og:image" content="https://www.agentsquire.com/img/agent-squire-share.png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Agent Squire: your guide to AI agents">
+	<meta property="og:title" content="Choosing an Assistant: ChatGPT, Claude, Gemini, and Copilot side by side">
+	<meta property="og:url" content="https://www.agentsquire.com/getting-started/choosing-an-assistant">
+	<meta property="og:description" content="ChatGPT, Claude, Gemini, and Copilot side by side, and how to pick the one that fits where you work, the apps you use, and how you like to talk.">
+
+	<meta name="twitter:title" content="Choosing an Assistant: ChatGPT, Claude, Gemini, and Copilot side by side">
+	<meta name="twitter:url" content="https://www.agentsquire.com/getting-started/choosing-an-assistant">
+	<meta name="twitter:site" content="@stoicdreamsllc">
+	<meta name="twitter:description" content="ChatGPT, Claude, Gemini, and Copilot side by side, and how to pick the one that fits where you work, the apps you use, and how you like to talk.">
+	<meta name="twitter:image" content="https://www.agentsquire.com/img/agent-squire-share.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="canonical" href="https://www.agentsquire.com/getting-started/choosing-an-assistant" />
+	<link rel="modulepreload" href="https://cdn.myfi.ws/js/mdparse.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="/wc/ai-disclaimer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/alerts.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/app.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/app-config.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/data.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/drawer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/feedback.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/flex.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/icon.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/link.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/myfi-info.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/nav.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/next-page.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/page-footer.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/page-segment.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/quote.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-dreams-logo.min.js" crossorigin="anonymous" />
+	<link rel="preload" as="script" href="https://cdn.myfi.ws/webui/stoic-social-links.min.js" crossorigin="anonymous" />
+	<meta name="webui-prerender" content="895d44e1ae">
+</head>
+
+<body>
+	<webui-app-config src="appConfig.json"></webui-app-config>
+	<webui-app data-removeclass=".nav|open;.shared|open">
+		<div data-prerendered>
+<p>The big four assistants are more alike than their makers would like you to think. Any of them can help you write, plan, and learn. The best one for you usually comes down to where you work, which apps you use, and which one you enjoy talking to.</p>
+
+<h2>The short answer</h2>
+
+<ol>
+<li><strong>If your work or school gives you an assistant, use it for work.</strong> It's the one they've approved for work information.</li>
+<li><strong>If you live in Google's apps,</strong> like Gmail and Docs, start with Gemini.</li>
+<li><strong>If you live in Microsoft's apps,</strong> like Outlook and Word with Microsoft 365, start with Copilot.</li>
+<li><strong>Otherwise,</strong> try ChatGPT and Claude side by side.</li>
+</ol>
+<p>Whichever you pick, try two on their free plans with the same real task for a week, and keep the one you like working with. The <a href="/which-assistant">Which Assistant Fits Me?</a> quiz walks you through this in three questions.</p>
+
+<h2>The four at a glance</h2>
+
+<table><thead><tr><th style="text-align: left"></th><th style="text-align: left">ChatGPT</th><th style="text-align: left">Claude</th><th style="text-align: left">Gemini</th><th style="text-align: left">Microsoft Copilot</th></tr></thead><tbody>
+<tr><td style="text-align: left">Made by</td><td style="text-align: left">OpenAI</td><td style="text-align: left">Anthropic</td><td style="text-align: left">Google</td><td style="text-align: left">Microsoft</td></tr>
+<tr><td style="text-align: left">Works inside</td><td style="text-align: left">Its own app</td><td style="text-align: left">Its own app</td><td style="text-align: left">Gmail, Docs, and other Google apps</td><td style="text-align: left">Word, Outlook, Excel, and other Microsoft apps, with Microsoft 365</td></tr>
+<tr><td style="text-align: left">Makes pictures</td><td style="text-align: left">Yes</td><td style="text-align: left">No, but draws charts and diagrams</td><td style="text-align: left">Yes</td><td style="text-align: left">Yes</td></tr>
+<tr><td style="text-align: left">Free plan</td><td style="text-align: left">Yes</td><td style="text-align: left">Yes</td><td style="text-align: left">Yes</td><td style="text-align: left">Yes</td></tr>
+<tr><td style="text-align: left">Main paid plan</td><td style="text-align: left">ChatGPT Plus</td><td style="text-align: left">Claude Pro</td><td style="text-align: left">Google AI Pro</td><td style="text-align: left">Microsoft 365 Personal</td></tr>
+</tbody></table>
+<p>All four can write, answer questions, search the web, read files you give them, and talk out loud in their phone apps.</p>
+
+<h2>Each one in a few words</h2>
+
+<ul>
+<li><strong>ChatGPT</strong> is the most widely used assistant, so help, guides, and how-to videos are easy to find. A good all-rounder if you don't have a strong reason to pick another.</li>
+<li><strong>Claude</strong> is known for clear, natural writing and for working through long documents. A good fit if you mostly write, edit, or read long material. It doesn't make pictures.</li>
+<li><strong>Gemini</strong> is Google's assistant. A good fit if your email, documents, and calendar are already in Google, because it can help right inside them.</li>
+<li><strong>Microsoft Copilot</strong> is Microsoft's assistant. A good fit if you use Word, Excel, and Outlook with Microsoft 365, because it can help right inside them, and you may already be paying for it.</li>
+</ul>
+
+<h2>What it costs</h2>
+
+<p>As of November 2026, all four have a free plan with daily limits, and their main paid plans cost about $20 a month in the US, or about $10 for Microsoft 365 Personal, which includes Copilot. A Google AI plan can be shared with your family. The <a href="/cost-calculator">AI Plan Cost Calculator</a> works out the cost for you and your household.</p>
+
+<h2>Other things worth checking</h2>
+
+<ul>
+<li><strong>Privacy settings:</strong> each one handles your chats differently. Check whether your chats are used for training, and whether you can turn that off.</li>
+<li><strong>Your devices:</strong> make sure it has an app for the phone and computer you use.</li>
+<li><strong>How it feels:</strong> you'll use it a lot, so notice which one's answers you find easiest to work with. This matters more than any comparison.</li>
+</ul>
+
+<p>These assistants change quickly. What each one offers was checked in November 2026, and I'll keep this page up to date.</p>
+		</div>
+		<webui-drawer slot="left" class="nav elevation-20" docked="true" data-state="slot|docked" data-moveable data-dockable>
+			<webui-flex justify="center" slot="header">
+				<webui-stoic-dreams-logo title="Agent Squire Logo" text="Agent" text2="Squire"></webui-stoic-dreams-logo>
+			</webui-flex>
+			<webui-nav routes="/nav.json" data-subscribe="app-nav-routes:setNavRoutes"></webui-nav>
+		</webui-drawer>
+		<webui-drawer slot="right" class="shared elevation-20" data-stopclick data-moveable data-state="slot">
+		</webui-drawer>
+		<header slot="header">
+			<button aria-label="open navigation menu" data-toggleclass=".nav|open" class="elevation-10 pa-1 mx-1">
+				<webui-icon icon="hamburger"></webui-icon>
+			</button>
+			<h1 data-subscribe="page-title:innerHTML">Choosing an Assistant</h1>
+			<h2 data-subscribe="page-subtitle:innerHTML">ChatGPT, Claude, Gemini, and Copilot side by side</h2>
+			<webui-flex grow></webui-flex>
+			<webui-feedback title="Provide us your feedback" data-post="https://api.myfi.ws/feedback/new" data-json-name="message">
+				<p>You can also come <a href="https://discord.gg/5X4YSDFdHD">chat with us on the Stoic Dreams discord server.</a></p>
+			</webui-feedback>
+			<webui-alerts title="View your notifications" data-title="My Alerts" data-toggleclass=".shared|open"></webui-alerts>
+			<webui-myfi-info sign-in-label="Sign In">
+				<template slot="panel-content">
+					<webui-alert show variant="info">Example Account Panel</webui-alert>
+				</template>
+			</webui-myfi-info>
+		</header>
+		<noscript>Javascript is required to view this site</noscript>
+		<webui-page-footer copyright="2016" company="Stoic Dreams">
+			<webui-next-page theme="tertiary" data-subscribe="page-next-page"></webui-next-page>
+			<app-ai-disclaimer></app-ai-disclaimer>
+			<webui-flex class="my-3" justify="center" wrap>
+				<webui-link href="/about" icon="circle_exclamation|backing|bordered">About Agent Squire</webui-link>
+				<webui-link href="/contact" icon="messages|fill|shade:tri">Contact Stoic Dreams</webui-link>
+				<webui-link href="/privacy" icon="shield_exclamation|backing|bordered">Privacy</webui-link>
+				<webui-link href="/terms" icon="handshake|fill|shade:tri">Terms & Conditions</webui-link>
+			</webui-flex>
+			<webui-stoic-social-links class="mb-2"></webui-stoic-social-links>
+		</webui-page-footer>
+	</webui-app>
+</body>
+
+</html>

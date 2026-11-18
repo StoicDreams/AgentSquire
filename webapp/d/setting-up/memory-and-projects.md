@@ -1,4 +1,4 @@
-<webui-data data-page-title="Memory and Projects" data-page-subtitle="Help your assistant remember what matters"></webui-data>
+<webui-data data-page-title="Memory and Projects" data-page-subtitle="Help your assistant remember what matters" data-page-description="How custom instructions, memory, and projects help your AI assistant remember what matters, when to use each, and how to keep them under control."></webui-data>
 
 <webui-quote theme="title">
 Every new chat starts fresh, which means explaining yourself again and again. Three features fix that: custom instructions, memory, and projects. Here's what each one does, when to use it, and how to keep it under control.

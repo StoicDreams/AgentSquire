@@ -1,4 +1,4 @@
-<webui-data data-page-title="Plan a Trip" data-page-subtitle="A recipe for a day-by-day plan"></webui-data>
+<webui-data data-page-title="Plan a Trip" data-page-subtitle="A recipe for a day-by-day plan" data-page-description="A step-by-step recipe, with a prompt to copy, for having your AI assistant sketch a day-by-day trip plan you can shape into your own."></webui-data>
 
 <webui-quote theme="title">
 Planning a trip means a lot of tabs and a lot of choices. Tell your assistant where you're going, who's coming, and what you enjoy, and it will sketch a day-by-day plan you can shape into your own.

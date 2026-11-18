@@ -1,4 +1,4 @@
-<webui-data data-page-title="AI Plan Cost Calculator" data-page-subtitle="What ChatGPT, Claude, Gemini, and Copilot cost you"></webui-data>
+<webui-data data-page-title="AI Plan Cost Calculator" data-page-subtitle="What ChatGPT, Claude, Gemini, and Copilot cost you" data-page-description="Compare what ChatGPT, Claude, Gemini, and Copilot would cost you by the month and the year, based on how much you use them and who shares the plan."></webui-data>
 
 <webui-quote theme="title">
 Tell me how much you'll use an assistant and how many people will share it, and I'll show you what each of the big four would cost, by the month and by the year.
