@@ -147,6 +147,13 @@
                 document.createTextNode(' to set it up.'),
             );
             parts.push(setUp);
+            const compare = webui.create('p', { class: 'quiz-compare' });
+            compare.append(
+                document.createTextNode('Want to see all four side by side? Read '),
+                webui.create('a', { href: '/getting-started/choosing-an-assistant', text: 'Choosing an assistant' }),
+                document.createTextNode('.'),
+            );
+            parts.push(compare);
             t._result.replaceChildren(...parts);
         },
     });

@@ -50,10 +50,12 @@ Once you've used a few cards, you'll find yourself writing prompts like this wit
 
 <webui-page-segment elevation="10">
 
-Some cards have a full recipe with tips and examples:
+Every card has a full recipe with tips and an example:
 
 - [Reply to an email](/recipes/reply-to-an-email)
 - [Summarize meeting notes](/recipes/summarize-meeting-notes)
+- [Get up to speed on a topic](/recipes/get-up-to-speed)
+- [Get help with a spreadsheet](/recipes/spreadsheet-help)
 - [Plan a trip](/recipes/plan-a-trip)
 
 More cards and recipes are on the way. Is there a task you'd like a card for? Tell me with the feedback button at the top of the page.

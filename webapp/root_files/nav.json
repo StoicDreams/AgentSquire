@@ -5,6 +5,27 @@
         "url": "/"
     },
     {
+        "name": "Getting Started",
+        "icon": "circle_compass|theme:secondary|backing|inverted",
+        "children": [
+            {
+                "name": "What Is an AI Assistant?",
+                "icon": "robot",
+                "url": "/getting-started/what-is-an-ai-assistant"
+            },
+            {
+                "name": "Your First Chat",
+                "icon": "comment-dots",
+                "url": "/getting-started/your-first-chat"
+            },
+            {
+                "name": "Choosing an Assistant",
+                "icon": "scale-balanced",
+                "url": "/getting-started/choosing-an-assistant"
+            }
+        ]
+    },
+    {
         "name": "Tools",
         "icon": "circle_wand|theme:primary|backing|inverted",
         "children": [
@@ -43,6 +64,16 @@
                 "name": "Summarize Meeting Notes",
                 "icon": "note-sticky",
                 "url": "/recipes/summarize-meeting-notes"
+            },
+            {
+                "name": "Get Up to Speed on a Topic",
+                "icon": "magnifying-glass",
+                "url": "/recipes/get-up-to-speed"
+            },
+            {
+                "name": "Get Help with a Spreadsheet",
+                "icon": "table",
+                "url": "/recipes/spreadsheet-help"
             },
             {
                 "name": "Plan a Trip",

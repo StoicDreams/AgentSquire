@@ -15,16 +15,16 @@ I'm here to help you choose the right assistant, set it up, and put it to work, 
 ## What you'll find here
 
 <webui-cards card-width="260">
-    <webui-card name="Getting started" avatar="compass" theme="primary">
+    <webui-card name="Getting started" avatar="compass" theme="primary" link="/getting-started/what-is-an-ai-assistant">
         What an AI agent is, how it differs from a chatbot, what it costs, and how to choose one for the work you do.
     </webui-card>
-    <webui-card name="Recipes for real work" avatar="list" theme="primary">
+    <webui-card name="Recipes for real work" avatar="list" theme="primary" link="/prompt-cards">
         Step-by-step tasks with prompts to copy: inbox triage, meeting notes, research summaries, spreadsheets, and trip plans.
     </webui-card>
-    <webui-card name="Setting up your assistant" avatar="sliders" theme="primary">
+    <webui-card name="Setting up your assistant" avatar="sliders" theme="primary" link="/instructions-builder">
         Custom instructions, projects, memory, and connecting the apps you already use, explained without the jargon.
     </webui-card>
-    <webui-card name="Staying safe" avatar="shield" theme="primary">
+    <webui-card name="Staying safe" avatar="shield" theme="primary" link="/ai-risks">
         What not to share, how to check an assistant's work, and which permissions to think twice about.
     </webui-card>
 </webui-cards>

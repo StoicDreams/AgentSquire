@@ -26,6 +26,7 @@ test('suggests Gemini for Google apps, with the reason', async ({ page }) => {
     await expect(result(page).locator('webui-card')).toHaveAttribute('name', 'Try Gemini first');
     await expect(result(page)).toContainText('It works inside Gmail, Google Docs');
     await expect(result(page).locator('a[href="/instructions-builder"]')).toBeVisible();
+    await expect(result(page).locator('.quiz-compare a')).toHaveAttribute('href', '/getting-started/choosing-an-assistant');
 });
 
 test('suggests Copilot for Microsoft apps', async ({ page }) => {

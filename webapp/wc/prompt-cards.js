@@ -66,6 +66,7 @@ My notes:
             id: 'get-up-to-speed',
             short: 'Research',
             title: 'Get up to speed on a topic',
+            guide: '/recipes/get-up-to-speed',
             blanks: [
                 { key: 'topic', label: 'The topic', hint: 'For example: heat pumps for an older house' },
                 { key: 'why', label: 'Why you need to know', hint: 'For example: I\'m deciding whether to replace my furnace' },
@@ -79,6 +80,7 @@ Explain the basics in plain language, then the three to five things that matter 
             id: 'spreadsheet-help',
             short: 'Spreadsheet',
             title: 'Get help with a spreadsheet',
+            guide: '/recipes/spreadsheet-help',
             blanks: [
                 { key: 'app', label: 'Your spreadsheet app', hint: 'For example: Excel, Google Sheets, or Numbers' },
                 { key: 'layout', label: 'How your sheet is set up', hint: 'For example: column A is the date, column B the customer, and column C the amount', long: true },

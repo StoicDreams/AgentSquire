@@ -46,7 +46,7 @@ test.describe('on the Prompt Cards page', () => {
         await typeText(page, 'Your spreadsheet app', 'Google Sheets');
         await expect.poll(() => outputText(page)).toContain("I'm using Google Sheets.");
         await expect(tool(page).locator('webui-code.prompt-output')).toHaveAttribute('label', 'Your prompt: Get help with a spreadsheet');
-        await expect(tool(page).locator('.prompt-guide a')).toHaveCount(0);
+        await expect(tool(page).locator('.prompt-guide a')).toHaveAttribute('href', '/recipes/spreadsheet-help');
         await pick(page, 'Meeting notes');
         await expect.poll(() => outputText(page)).toContain('Summarize my notes from a meeting about [what the meeting was about].');
     });
