@@ -1,7 +1,7 @@
 import { test, ROOT_FILES } from '../tests/support/site.mjs';
 import { join } from 'node:path';
 
-// Renders Agent Squire's brand images from webapp/root_files/Logo.svg (Orin, the robot on a shield), so they always
+// Renders Agent Squire's brand images from webapp/root_files/Logo.svg (the Stoic Dreams logo with the words Agent Squire), so they always
 // match the logo and palette: the app icons (apple-icon.png, ms-icon-512x512.png) and the 1200x630 image shared links
 // show (og:image). Run it with PowerShell/screenshots.ps1, or npm run screenshots, after changing the logo or the palette.
 
@@ -17,7 +17,7 @@ for (const [file, size] of [['apple-icon.png', 192], ['ms-icon-512x512.png', 512
     test(`app icon ${file}`, async ({ page }) => {
         await page.setViewportSize({ width: size, height: size });
         await page.goto('/');
-        // The 512 icon is also maskable, so the shield sits inside the middle 80% safe zone.
+        // The 512 icon is also maskable, so the logo sits inside the middle 80% safe zone.
         await page.setContent(`<!doctype html><html><body style="margin:0;background:${BACKGROUND};display:flex;align-items:center;justify-content:center;width:${size}px;height:${size}px">
 <img src="/Logo.svg" alt="" style="display:block;width:${Math.round(size * 0.8)}px;height:${Math.round(size * 0.8)}px"></body></html>`);
         await page.locator('img').evaluate(img => img.decode());

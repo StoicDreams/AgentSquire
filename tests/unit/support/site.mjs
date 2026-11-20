@@ -15,6 +15,7 @@
 //
 // This file is the same in every site: change them all at once. page.mjs, stand-ins.mjs and test-cache.mjs are copies
 // of MyFiCDN's tests/unit/support files, shared with Task Proxy too.
+import { IDBCursor, IDBCursorWithValue, IDBDatabase, IDBFactory, IDBIndex, IDBKeyRange, IDBObjectStore, IDBOpenDBRequest, IDBRequest, IDBTransaction, IDBVersionChangeEvent } from 'fake-indexeddb';
 import jsdom from 'jsdom';
 import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import { dirname, extname, join, normalize, resolve, sep } from 'node:path';
@@ -241,6 +242,8 @@ export async function openTab(record) {
     const errors = [];
     const listeners = {};
     const env = {
+        // jsdom has no IndexedDB: each tab gets its own, kept across its page loads, as a browser keeps the origin's.
+        indexedDB: new IDBFactory(),
         routes: [],
         initScripts: [],
         exposed: {},
@@ -282,6 +285,9 @@ export async function openTab(record) {
             if (text.startsWith('Error setting data')) errors.push(text);
         });
         virtualConsole.on('jsdomError', error => {
+            // A file from outside the site and the CDN, such as fonts or analytics, is blocked on purpose.
+            const failed = `${error.message}`.match(/^Could not load \w+: "([^"]+)"/)?.[1];
+            if (failed && !CDN_ORIGINS.has(new URL(failed).origin) && new URL(failed).origin !== ORIGIN) return;
             if (!EXPECTED_CONSOLE.some(pattern => pattern.test(`${error.message}`))) env.emit('pageerror', error);
         });
         const dom = new JSDOM(pageHtml, {
@@ -289,13 +295,22 @@ export async function openTab(record) {
             runScripts: 'dangerously',
             pretendToBeVisual: true,
             virtualConsole,
-            resources: { interceptors: [requestInterceptor(request => answer(env, new RouteRequest(request.url, request.method, null, headerObject(request.headers))))] },
+            resources: {
+                interceptors: [requestInterceptor(async request => {
+                    const response = await answer(env, new RouteRequest(request.url, request.method, null, headerObject(request.headers)));
+                    // jsdom stops reading the page at a stylesheet whose request fails outright, where a browser goes on,
+                    // so a blocked file fails with an error status instead.
+                    return response.type === 'error' ? new Response('', { status: 502 }) : response;
+                })],
+            },
             beforeParse(window) {
                 env.page?.clock?._onWindow(window);
                 Object.defineProperty(window, 'innerWidth', { configurable: true, value: env.viewport?.width ?? VIEWPORT.width });
                 Object.defineProperty(window, 'innerHeight', { configurable: true, value: env.viewport?.height ?? VIEWPORT.height });
                 if (storage) restoreStorage(window, storage);
                 installStandIns(window);
+                Object.assign(window, { IDBCursor, IDBCursorWithValue, IDBDatabase, IDBIndex, IDBKeyRange, IDBObjectStore, IDBOpenDBRequest, IDBRequest, IDBTransaction, IDBVersionChangeEvent, IDBFactory });
+                Object.defineProperty(window, 'indexedDB', { configurable: true, value: env.indexedDB });
                 // jsdom's crypto has getRandomValues only; Node's Web Crypto stands in for the rest.
                 if (!window.crypto?.subtle) Object.defineProperty(window, 'crypto', { configurable: true, value: globalThis.crypto });
                 window.matchMedia = mediaMatcher(env.media);

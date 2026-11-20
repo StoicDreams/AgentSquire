@@ -1,7 +1,7 @@
 <webui-data data-page-title="{APP_NAME}" data-page-subtitle="Your guide to AI agents" data-page-description="Plain-language guides and free tools that help you choose, set up, and get real work out of AI assistants like ChatGPT, Claude, Gemini, and Copilot."></webui-data>
 
 <webui-page-segment elevation="10">
-<webui-media src="/Logo.svg" alt="Orin, the Agent Squire: a gold robot on a blue shield" size="160">
+<webui-media src="/img/orin.svg" alt="Orin, the Agent Squire: a gold robot on a blue shield" size="160">
 
 ## Hello, I'm Orin, your squire
 
